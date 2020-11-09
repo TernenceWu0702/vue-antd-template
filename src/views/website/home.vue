@@ -1,10 +1,10 @@
 <!--
- * @description: 
+ * @description:
  * @Author: T.W
  * @Github: https://github.com/TernenceWu0702
  * @Date: 2020-11-09 11:21:51
  * @LastEditors: T.W
- * @LastEditTime: 2020-11-09 11:21:51
+ * @LastEditTime: 2020-11-09 14:13:45
 -->
 <template>
   <div>官网首页</div>
@@ -16,5 +16,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

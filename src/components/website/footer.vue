@@ -2,18 +2,17 @@
  * @description: 
  * @Author: T.W
  * @Github: https://github.com/TernenceWu0702
- * @Date: 2020-11-09 11:59:59
+ * @Date: 2020-11-09 14:11:30
  * @LastEditors: T.W
- * @LastEditTime: 2020-11-09 14:12:51
+ * @LastEditTime: 2020-11-09 14:11:30
 -->
 <template>
-  <div>官网后台首页</div>
+  <div>footer</div>
 </template>
 
 <script>
-export default {
-  components: {}
-};
+export default {};
 </script>
 
-<style></style>
+<style>
+</style>

@@ -4,18 +4,24 @@
  * @Github: https://github.com/TernenceWu0702
  * @Date: 2020-11-09 10:52:37
  * @LastEditors: T.W
- * @LastEditTime: 2020-11-09 11:59:10
+ * @LastEditTime: 2020-11-09 14:18:45
 -->
 <template>
   <div>
-    <div>官网布局</div>
+    <Header />
     <router-view></router-view>
+    <Footer />
   </div>
 </template>
 
 <script>
+import Header from "../../components/website/header";
+import Footer from "../../components/website/footer";
 export default {
-  components: {}
+  components: {
+    Header,
+    Footer
+  }
 };
 </script>
 
