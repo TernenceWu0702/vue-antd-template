@@ -4,7 +4,7 @@
  * @Github: https://github.com/TernenceWu0702
  * @Date: 2020-11-09 14:10:29
  * @LastEditors: T.W
- * @LastEditTime: 2020-11-09 15:53:03
+ * @LastEditTime: 2020-11-10 10:29:35
 -->
 <template>
   <div class="header-container">
@@ -36,6 +36,7 @@
 </template>
 
 <script>
+import { mapState } from "vuex";
 export default {
   name: "Header",
   data() {
@@ -67,6 +68,9 @@ export default {
         }
       ]
     };
+  },
+  computed: {
+    ...mapState(["screenWidth"])
   }
 };
 </script>
@@ -97,7 +101,7 @@ export default {
     .text {
       margin-top: 30px;
       display: inline-block;
-      margin-left: 32px;
+      margin-left: 50px;
       height: 32px;
     }
 
@@ -118,7 +122,7 @@ export default {
       text-align: center;
     }
     .botton2 {
-      margin-left: 20px;
+      // margin-left: 20px;
       background-color: #00cc97;
       color: #ffffff;
     }

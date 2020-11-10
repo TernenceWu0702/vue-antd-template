@@ -4,7 +4,7 @@
  * @Github: https://github.com/TernenceWu0702
  * @Date: 2020-11-09 11:12:00
  * @LastEditors: T.W
- * @LastEditTime: 2020-11-09 11:12:00
+ * @LastEditTime: 2020-11-10 10:29:51
 -->
 <template>
   <div id="app">
@@ -15,6 +15,23 @@
     <router-view />
   </div>
 </template>
+
+<script>
+import { mapActions } from "vuex";
+export default {
+  mounted() {
+    window.onresize = () => {
+      return (() => {
+        window.fullWidth = document.documentElement.clientWidth;
+        this.changeScreenWidth(window.fullWidth);
+      })();
+    };
+  },
+  methods: {
+    ...mapActions(["changeScreenWidth"])
+  }
+};
+</script>
 
 <style lang="less">
 #app {
